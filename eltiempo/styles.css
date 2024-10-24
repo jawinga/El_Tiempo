@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  transition: background 0.5s ease;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.search-box {
+  margin-bottom: 1rem;
+}
+
+select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+#weather-info {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.weather-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+#weather-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+
+#city-name {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+#temperature {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0083b0;
+  margin-bottom: 0.5rem;
+}
+
+#description {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.weather-details {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+#error-message {
+  color: #d9534f;
+  margin-top: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Atmospheric backgrounds */
+body.sunny {
+  background: linear-gradient(to right, #ff8008, #ffc837);
+}
+
+body.cloudy {
+  background: linear-gradient(to right, #757f9a, #d7dde8);
+}
+
+body.rainy {
+  background: linear-gradient(to right, #000046, #1cb5e0);
+}
+
+body.clear {
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+}

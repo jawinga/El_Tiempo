@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplicación del Tiempo</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Aplicación del Tiempo</h1>
+      <div class="search-box">
+        <label for="city-select">Selecciona una ciudad:</label>
+        <div class="select-wrapper">
+          <select id="city-select">
+            <option value="">Elige una ciudad</option>
+            <option value="Nueva York">Nueva York</option>
+            <option value="Londres">Londres</option>
+            <option value="Tokio">Tokio</option>
+            <option value="París">París</option>
+            <option value="Sídney">Sídney</option>
+          </select>
+        </div>
+      </div>
+      <div id="weather-info" class="hidden">
+        <div class="weather-header">
+          <img id="weather-icon" src="" alt="Icono del tiempo" />
+          <h2 id="city-name"></h2>
+        </div>
+        <p id="temperature"></p>
+        <p id="description"></p>
+        <div class="weather-details">
+          <p id="humidity"></p>
+          <p id="wind-speed"></p>
+        </div>
+      </div>
+      <div id="error-message" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
