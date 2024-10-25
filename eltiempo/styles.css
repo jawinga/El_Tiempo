@@ -99,7 +99,6 @@ select {
   display: none;
 }
 
-/* Atmospheric backgrounds */
 body.sunny {
   background: linear-gradient(to right, #ff8008, #ffc837);
 }
@@ -116,7 +115,6 @@ body.clear {
   background: linear-gradient(to right, #56ccf2, #2f80ed);
 }
 
-/* Responsive design */
 @media (max-width: 480px) {
   .container {
     padding: 1rem;

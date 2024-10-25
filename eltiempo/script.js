@@ -1,4 +1,3 @@
-// Datos predefinidos del tiempo para demostración
 const weatherData = {
   "Nueva York": {
     temp: 22,
